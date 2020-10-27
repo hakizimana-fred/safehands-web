@@ -1,0 +1,53 @@
+/*
+Theme Name: Little Angels
+Theme URI: http://orfeostoryweb.com/
+Author: Ryan
+Author URI: http://orfeostoryweb.com/
+Description: We were all born to thrive. We each have God’s unique stamp of approval on our lives, complete with a plan and a purpose. Sadly, many children have never heard this message. Many children don’t know that they matter; that anyone cares about them. We’re on a mission to make sure every child knows they are loved, that they matter, and that they have incredible potential.
+Version: 3.12.18
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: charity, fund raising
+Text Domain: littleangels
+*/
+/*Pagination*/
+.pagination{
+  margin:0;
+}
+.nav-links .page-numbers, .styled-pagination .page-numbers{
+  margin-right: 10px;
+  display: inline-block;
+  text-decoration: none;
+
+	line-height:20px;
+	padding:9px 10px;
+	height:40px;
+	font-size:15px;
+	text-transform:capitalize;
+	min-width:40px;
+	border:1px solid #e0e0e0;
+	background:#f2f2f2;
+	color:#777777;
+	font-weight:500;
+	text-align:center;
+	border-radius:50%;
+	transition:all 500ms ease;
+	-webkit-transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	-moz-transition:all 500ms ease;
+}
+.nav-links .current, .nav-links .page-numbers:hover, .styled-pagination .current, .styled-pagination .page-numbers:hover{
+  color: #ffffff;
+  background: #29af8a;
+  border: 1px solid #29af8a;
+}
+
+.vc_row{
+	margin:0 auto !important;
+}
+
+.page-id-32 .news-style-one{
+	height:425px !important;
+	overflow: hidden;
+}
