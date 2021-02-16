@@ -18,10 +18,10 @@
     <title>Safe Hands Children Foundation Nakedde </title>
     <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
     <link rel='dns-prefetch' href='http://s.w.org/' />
-    <script type="text/javascript">
+<!--     <script type="text/javascript">
         window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "http:\/\/www.littleangelsministry.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=751380d54f726d266e07017fbcf97424" } };
         !function (a, b, c) { function d(a, b) { var c = String.fromCharCode; l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, a), 0, 0); var d = k.toDataURL(); l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, b), 0, 0); var e = k.toDataURL(); return d === e } function e(a) { var b; if (!l || !l.fillText) return !1; switch (l.textBaseline = "top", l.font = "600 32px Arial", a) { case "flag": return !(b = d([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819])) && (b = d([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]), !b); case "emoji": return b = d([55358, 56760, 9792, 65039], [55358, 56760, 8203, 9792, 65039]), !b }return !1 } function f(a) { var c = b.createElement("script"); c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var g, h, i, j, k = b.createElement("canvas"), l = k.getContext && k.getContext("2d"); for (j = Array("flag", "emoji"), c.supports = { everything: !0, everythingExceptFlag: !0 }, i = 0; i < j.length; i++)c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c.supports[j[i]], "flag" !== j[i] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[j[i]]); c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.everything || (h = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", h, !1), a.addEventListener("load", h, !1)) : (a.attachEvent("onload", h), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji))) }(window, document, window._wpemojiSettings);
-    </script>
+    </script> -->
     <style type="text/css">
         img.wp-smiley,
         img.emoji {
@@ -302,6 +302,65 @@
             border: none;
             outline: none;
         }
+        .nav-top{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px;
+        }
+        .nav-top ul{
+          display: flex;
+          flex: 1;
+          margin-right: 4
+          0px;
+        }
+        .nav-top ul li{
+          margin: 15px 5px;
+        }
+
+        .menu-btn{
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          right: 30px;
+          z-index: 2;
+          display: none;
+        }
+
+        @media(max-width: 768px){
+          .menu-btn {
+            display: block;
+          }
+          .logo{
+            display: none;
+          }
+          .nav-top .btn-top {
+            margin-right: 50px;
+            display: none;
+          }
+          .nav-top ul {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0
+            width: 50%;
+            height: 100%;
+            border-right: #ccc 1px solid;
+            transform: translateX(-500px);
+            padding: 30px;
+            background: black;
+            color: #fff;
+          }
+
+          .nav-top ul li{
+            padding: 10px;
+            font-size: 14px;
+          }
+
+          .nav-top ul.show{
+            transform: translateX(-20px);
+          }
+        }
     </style>
     <link rel='stylesheet' id='contact-form-7-css'
         href='wp-content/plugins/contact-form-7/includes/css/styles3c21.css?ver=5.1.1' type='text/css' media='all' />
@@ -362,7 +421,7 @@
 
 <body
     class="home page-template page-template-tpl_home page-template-tpl_home-php page page-id-20 wpb-js-composer js-comp-ver-5.5 vc_responsive">
-  <!--   <header class="header-top">
+<!--     <header class="header-top">
         <div class="container">
             <div class="logo">
                 <img src="wp-content/themes/littleangels/images/resize safe.png" alt="">
@@ -391,6 +450,32 @@
             </div>
         </div>
     </header> -->
+    <div class="menu-btn" id="menu-btn">
+      <i class="fa fa-bars"></i>    
+    </div>
+
+<!--     <nav class="nav-top">
+      <div class="logo">
+         <img src="wp-content/themes/littleangels/images/resize safe.png" alt="">
+      </div>
+      <ul>
+                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-48"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a
+                            title="Ministries=" href="ministries/index.html">Ministries</a></li>
+                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-205"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-205"><a
+                            title="Volunteers" href="volunteers/index.html">Volunteers</a></li>
+                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-46"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a
+                            title="How You Can Help" href="how-you-can-help/index.html">GET INVOLVED</a></li>
+                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-44"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a
+                            title="Contact Us" href="contact-us/index.html">Contact Us</a></li>
+
+                </ul>
+                 <a href="https://www.fathersheartart.com" class="btn-top" ><i class="fa fa-shopping-cart"
+                        style="color: white;" class="shopping-cart"></i></a>
+    </nav> -->
     <div class="page-wrapper">
 
         <!-- Preloader -->
@@ -513,7 +598,7 @@
         <!--End Main Header -->
 
         <!--Main Slider-->
-        <section class="main-slider" data-start-height="700" data-slide-overlay="yes">
+  <section class="main-slider" data-start-height="700" data-slide-overlay="yes">
 
             <div class="tp-banner-container">
                 <div class="tp-banner">
@@ -546,8 +631,9 @@
                                 data-splitin="none" data-splitout="none" data-elementdelay="0.01"
                                 data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn"><a
                                     href="how-you-can-help/index.html" class="theme-btn btn-style-one"
-                                    style="background-color: #00909e; border:none">GET INVOLVED</a> &ensp; <a
-                                    href="meet-the-little-angels/index.html" class="theme-btn btn-style-two">CHILD SPONORSHIP</a></div>
+                                    style="background-color: #00909e; border:none">How You Can Help</a> &ensp; <a
+                                    href="meet-the-little-angels/index.html" class="theme-btn btn-style-two">Meet The
+                                    Little Angels</a></div>
 
                         </li>
 
@@ -577,16 +663,16 @@
                                 data-voffset="130" data-speed="1500" data-start="1500" data-easing="easeOutExpo"
                                 data-splitin="none" data-splitout="none" data-elementdelay="0.01"
                                 data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn"><a
-                                    href="volunteers/index.html" class="theme-btn btn-style-one">CONTACT US</a>
+                                    href="volunteers/index.html" class="theme-btn btn-style-one">BECOME A VOLUNTEER</a>
                                 &ensp; <a href="donate-page/index.html" class="theme-btn btn-style-two">Donate Now</a>
                             </div>
 
                         </li>
 
                         <li data-transition="fade" data-slotamount="1" data-masterspeed="1000"
-                            data-thumb="http://www.littleangelsministry.com/wp-content/themes/littleangels/images/main-slider/56.jpg"
+                            data-thumb="http://www.littleangelsministry.com/wp-content/themes/littleangels/images/main-slider/wisper.jpg"
                             data-saveperformance="off" data-title="Awesome Title Here">
-                            <img src="wp-content/themes/littleangels/images/main-slider/56.jpg" alt=""
+                            <img src="wp-content/themes/littleangels/images/main-slider/wisper.jpg" alt=""
                                 data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                             <div class="tp-caption sft sfb tp-resizeme" data-x="center" data-hoffset="0" data-y="center"
@@ -619,6 +705,7 @@
                 </div>
             </div>
         </section>
+
 
 
         <!--Welcome Section-->
@@ -1203,6 +1290,9 @@
                                     <script type='text/javascript'
                                         src='wp-includes/js/wp-embed.min3b01.js?ver=751380d54f726d266e07017fbcf97424'></script>
                                     <script>
+                                      // document.querySelector('#menu-btn').addEventListener('click', () => {
+                                      //   document.querySelector('.nav-top ul').classList.toggle('show')
+                                      // })
                                         var slide = 0,
                                             slides = document.querySelectorAll('#slides > li'),
                                             numSlides = slides.length,
@@ -1244,15 +1334,16 @@
                                             },
                                             autonext = setInterval(function () {
                                                 next();
-                                            }, 1000);
+                                            }, 5000);
 
 
-                                        //Buttons
+                                        Buttons
                                         document.querySelector('#first').addEventListener('click', function () {
                                             slide = 0;
                                             currentSlide();
                                         }, false);
-                                        document.querySelector('#second').addEventListener('click', function () {
+                                        document.qu
+                                        erySelector('#second').addEventListener('click', function () {
                                             slide = 1;
                                             currentSlide();
                                         }, false);
@@ -1278,6 +1369,9 @@
                                         document.querySelector('#previous').addEventListener('click', function () {
                                             prev();
                                         }, false);
+
+
+                                     
                                     </script>
 </body>
 
